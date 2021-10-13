@@ -5,11 +5,45 @@
          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
          revision="eleven" />
  
+ <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-12.0" />
+ 
  <!-- Trees -->
  <project path="device/oneplus/fajita" name="SevralT/device_oneplus_fajita.git" remote="github" revision="sc" />
  <project path="device/oneplus/sdm845-common" name="PixelExperience-Devices/device_oneplus_sdm845-common.git" remote="github" revision="eleven" />
  <project path="device/oneplus/common" name="LineageOS/android_device_oneplus_common.git" remote="github" revision="lineage-18.1" />
  <project path="vendor/oneplus/sdm845-common" name="vendor_oneplus_sdm845-common" remote="pixel-devices-blobs"/>
  <project path="kernel/oneplus/sdm845" name="LineageOS/android_kernel_oneplus_sdm845.git" remote="github" revision="lineage-18.1" />
+ 
+ <!-- Requierd QCOM CAF and LineageOS Repos -->
+ <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="arrow" />
+ <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" remote="arrow" revision="arrow-12.0-caf" />
+ <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="arrow" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+  </project>
+ <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sdm845" />
+ <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sdm845" />
+ <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sdm845" />
+ <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="arrow" />
+ <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="arrow" revision="arrow-12.0-caf"/>
+ <project path="hardware/interfaces" name="android_hardware_interfaces" remote="arrow" />
+ <project path="hardware/libhardware" name="android_hardware_libhardware" remote="arrow" />
+ <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
+ <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="arrow" />
+ <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="arrow" />
+ <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="arrow" />
+ <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
+ <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="arrow" />
+ <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="arrow" />
+ <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="arrow" />
+ <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="arrow" />
+ <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arrow" />
+ <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="arrow" />
  
 </manifest>
