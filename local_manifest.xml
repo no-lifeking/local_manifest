@@ -20,6 +20,7 @@
  <!-- Remove some projects -->
  <remove-project name="platform/hardware/libhardware" />
  <remove-project name="platform/hardware/interfaces" />
+ <remove-project name="android_vendor_qcom_opensource_core-utils"
  
  <!-- Requiered QCOM CAF and LineageOS Repos -->
  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="arrow" />
