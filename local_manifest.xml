@@ -42,7 +42,7 @@
  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="arrow" />
  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="arrow" />
- <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
+ <project path="vendor/qcom/opensource/dataservices" name="SevralT/android_vendor_qcom_opensource_dataservices" remote="github" revision="arrow-12.0" />
  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="arrow" />
  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="arrow" />
  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arrow" />
