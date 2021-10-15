@@ -6,8 +6,8 @@
          revision="eleven" />
  
  <!-- Trees -->
- <project path="device/oneplus/fajita" name="dotOS-Devices/device_oneplus_fajita.git" remote="github" revision="dot11" />
- <project path="device/oneplus/sdm845-common" name="dotOS-Devices/android_device_oneplus_fajita-common.git" remote="github" revision="dot11" />
+ <project path="device/oneplus/fajita" name="SevralT/device_oneplus_fajita.git" remote="github" revision="dot11" />
+ <project path="device/oneplus/sdm845-common" name="SevralT/android_device_oneplus_fajita-common.git" remote="github" revision="dot11" />
  <project path="device/oneplus/common" name="LineageOS/android_device_oneplus_common.git" remote="github" revision="lineage-18.1" />
  <project path="vendor/oneplus/sdm845-common" name="vendor_oneplus_sdm845-common" remote="pixel-devices-blobs"/>
  <project path="kernel/oneplus/sdm845" name="LineageOS/android_kernel_oneplus_sdm845.git" remote="github" revision="lineage-18.1" />
