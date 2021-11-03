@@ -12,6 +12,8 @@
  <project path="system/sepolicy" name="SevralT/system_sepolicy" remote="github" revision="twelve" />
  <remove-project name="system_core" />
  <project path="system/core" name="SevralT/system_core" remote="github" revision="twelve" />
+ <remove-project name="vendor_nxp_opensource_packages_apps_Nfc" />
+ <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="Project-Fluid-Testing/vendor_nxp_opensource_packages_apps_Nfc" remote="github" revision="fluid-12" />
  
  <!-- Device Trees -->
  <project path="device/oneplus/fajita" name="SevralT/device_oneplus_fajita.git" remote="github" revision="pixel-S" />
