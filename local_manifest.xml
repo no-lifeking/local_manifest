@@ -6,12 +6,12 @@
          revision="eleven" />
  
  <!-- Custom repo's -->
- <remove-project name="frameworks_base">
- <project path="frameworks/base" name="SevralT/frameworks_base" remote="github" revision="twelve">
- <remove-project name="system_sepolicy">
- <project path="system/sepolicy" name="SevralT/system_sepolicy" remote="github" revision="twelve">
- <remove-project name="system_core">
- <project path="system/core" name="SevralT/system_core" remote="github" revision="twelve">
+ <remove-project name="frameworks_base" />
+ <project path="frameworks/base" name="SevralT/frameworks_base" remote="github" revision="twelve" />
+ <remove-project name="system_sepolicy" />
+ <project path="system/sepolicy" name="SevralT/system_sepolicy" remote="github" revision="twelve" />
+ <remove-project name="system_core" />
+ <project path="system/core" name="SevralT/system_core" remote="github" revision="twelve" />
  
  <!-- Device Trees -->
  <project path="device/oneplus/fajita" name="SevralT/device_oneplus_fajita.git" remote="github" revision="pixel-S" />
