@@ -5,11 +5,19 @@
          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
          revision="eleven" />
  
- <!-- Trees -->
- <project path="device/oneplus/fajita" name="SevralT/device_oneplus_fajita.git" remote="github" revision="11" />
- <project path="device/oneplus/sdm845-common" name="SevralT/device_oneplus_sdm845-common.git" remote="github" revision="11" />
- <project path="device/oneplus/common" name="LineageOS/android_device_oneplus_common.git" remote="github" revision="lineage-18.1" />
+ <!-- Custom repo's -->
+ <remove-project name="frameworks_base">
+ <project path="frameworks/base" name="SevralT/frameworks_base" remote="github" revision="twelve">
+ <remove-project name="system_sepolicy">
+ <project path="system/sepolicy" name="SevralT/system_sepolicy" remote="github" revision="twelve">
+ <remove-project name="system_core">
+ <project path="system/core" name="SevralT/system_core" remote="github" revision="twelve">
+ 
+ <!-- Device Trees -->
+ <project path="device/oneplus/fajita" name="SevralT/device_oneplus_fajita.git" remote="github" revision="pixel-S" />
+ <project path="device/oneplus/sdm845-common" name="SevralT/device_oneplus_sdm845-common.git" remote="github" revision="pixel-S" />
+ <project path="device/oneplus/common" name="ShapeShiftOS-Devices/device_oneplus_common.git" remote="github" revision="android_12" />
  <project path="vendor/oneplus/sdm845-common" name="vendor_oneplus_sdm845-common" remote="pixel-devices-blobs"/>
- <project path="kernel/oneplus/sdm845" name="LineageOS/android_kernel_oneplus_sdm845.git" remote="github" revision="lineage-18.1" />
+ <project path="kernel/oneplus/sdm845" name="Evolution-X-Devices/kernel_oneplus_sdm845.git" remote="github" revision="elle" />
  
 </manifest>
